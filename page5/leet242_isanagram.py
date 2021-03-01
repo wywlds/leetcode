@@ -2,7 +2,7 @@ from collections import Counter
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         counter1 = Counter(s)
-        counter2 = Counter(s)
+        counter2 = Counter(t)
         for k, c in counter1:
             if k not in counter2:
                 return False
